@@ -41,10 +41,21 @@ section {
     justify-items: center;
 }
 
+/* Стиль для YouTube видео */
 .video-grid iframe {
     width: 100%;
     height: auto;
-    aspect-ratio: 16 / 9; /* Сохраняем пропорции видео */
+    aspect-ratio: 16 / 9; /* Горизонтальное соотношение сторон */
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Специальный стиль для Instagram Reels */
+.reel-container iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 9 / 16; /* Вертикальное соотношение сторон */
     border-radius: 10px;
     border: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
